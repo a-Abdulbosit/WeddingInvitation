@@ -1,0 +1,11 @@
+C:\Users\Zuc\source\repos\Wedding\Wedding\bin\Debug\net8.0\Wedding.deps.json
+C:\Users\Zuc\source\repos\Wedding\Wedding\bin\Debug\net8.0\Wedding.dll
+C:\Users\Zuc\source\repos\Wedding\Wedding\bin\Debug\net8.0\Wedding.pdb
+C:\Users\Zuc\source\repos\Wedding\Wedding\obj\Debug\net8.0\Wedding.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zuc\source\repos\Wedding\Wedding\obj\Debug\net8.0\Wedding.AssemblyInfoInputs.cache
+C:\Users\Zuc\source\repos\Wedding\Wedding\obj\Debug\net8.0\Wedding.AssemblyInfo.cs
+C:\Users\Zuc\source\repos\Wedding\Wedding\obj\Debug\net8.0\Wedding.csproj.CoreCompileInputs.cache
+C:\Users\Zuc\source\repos\Wedding\Wedding\obj\Debug\net8.0\Wedding.dll
+C:\Users\Zuc\source\repos\Wedding\Wedding\obj\Debug\net8.0\refint\Wedding.dll
+C:\Users\Zuc\source\repos\Wedding\Wedding\obj\Debug\net8.0\Wedding.pdb
+C:\Users\Zuc\source\repos\Wedding\Wedding\obj\Debug\net8.0\ref\Wedding.dll

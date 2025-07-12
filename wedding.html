@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shohjahon & Zarina</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <style>
+        body {
+            background-color: #ececec;
+            font-family: serif;
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 2px #757261;
+        }
+
+        .drop-shadow-img {
+            filter: drop-shadow(0px 20px 20px rgba(59, 22, 66, 0.3));
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center min-h-screen">
+
+    <main class="max-w-[450px] w-full p-2 bg-[#ececec] overflow-x-hidden">
+        <div class="h-screen flex flex-col gap-5">
+
+            <!-- Navbar -->
+            <nav class="flex items-center justify-between p-4 px-8 mb-20" data-aos="fade-down">
+                <div class="flex items-center justify-center py-8 rounded-full border-2 border-[#a9a05c]">
+                    <div class="w-28 h-28 flex items-center justify-center text-[#a9a05c] text-4xl">
+                        Sh & Z
+                    </div>
+                </div>
+
+                <div class="pr-8 text-3xl italic text-[#a9a05c] text-shadow">Taklifnoma</div>
+            </nav>
+
+            <!-- Couple Section -->
+            <div class="relative text-6xl text-sky-600 py-5 space-y-5 text-shadow">
+                <img src="images/hydrangea.png" class="drop-shadow-img absolute -top-1/2 -right-24 rotate-[-20deg]" width="250" alt="flower" data-aos="fade-left" />
+                <img src="images/hydra.png" class="drop-shadow-img absolute -bottom-1/2 -left-24 rotate-[20deg]" width="250" alt="flower" data-aos="fade-right" />
+                <h1 class="pl-10" data-aos="fade-right">Shohjahon</h1>
+                <h1 class="text-center" data-aos="zoom-in">&</h1>
+                <h1 class="pr-10 flex justify-end" data-aos="fade-left">Zarina</h1>
+            </div>
+
+            <!-- Line + Scroll Icon -->
+            <div class="flex-1 flex flex-col items-center justify-between pt-16">
+                <div class="relative mx-auto w-[90%] aspect-[3/1]" data-aos="flip-up">
+                    <img src="images/line.png" alt="line" class="absolute inset-0 w-full h-full object-cover" />
+                </div>
+                <div class="fixed bottom-5 left-1/2 -translate-x-1/2">
+                    <button class="text-[#a9a05c] w-10 h-16 rounded-full flex justify-center items-center border border-[#a9a05c]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="lucide lucide-chevron-down">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Details -->
+        <div class="relative mt-32">
+            <img src="images/hydrangea.png" class="drop-shadow-img absolute -top-1/2 -right-24 rotate-[-20deg]" width="250" alt="flower" data-aos="fade-left" />
+            <img src="images/hydra.png" class="drop-shadow-img absolute -bottom-1/2 -left-24 rotate-[20deg]" width="250" alt="flower" data-aos="fade-right" />
+
+            <h2 class="text-4xl text-center italic text-[#a9a05c]" data-aos="flip-up">Assalomu alaykum</h2>
+            <p class="px-8 text-center mt-5 text-[#7c7647] italic" data-aos="fade-up">
+                Hurmatli qadrdonlar! Sizlarni aziz farzandlarimiz Shohjahon va Zarinalarning nikoh to'ylari munosabati bilan 2025-yil 19-iyul kuni soat 18:00 da bo'lib o'tadigan to'y dasturxonimizga taklif etamiz!
+            </p>
+            <p class="px-8 text-center mt-5 text-[#7c7647] italic" data-aos="fade-up">
+                Hurmat va ehtirom ila, Raxmonovlar oilasi
+            </p>
+
+            <div class="my-7 w-3/6 mx-auto flex items-center" data-aos="zoom-in">
+                <span class="w-2 h-2 rounded-full border border-[#a9a05c]"></span>
+                <div class="w-full h-px bg-[#a9a05c]"></div>
+                <span class="w-2 h-2 rounded-full border border-[#a9a05c]"></span>
+            </div>
+
+            <h3 class="text-center text-3xl text-[#a9a05c] italic" data-aos="zoom-in">
+                <div>19 <span class="mx-1">July</span> 2025</div>
+                <div class="flex justify-center items-center gap-2">
+                    <span>18</span>
+                    <span class="w-1 h-1 rounded-full bg-[#a9a05c]"></span>
+                    <span>00</span>
+                </div>
+            </h3>
+        </div>
+
+        <!-- Location -->
+        <div class="mt-40 text-center">
+            <p class="px-8 mt-5 text-[#7c7647] italic" data-aos="fade-up">
+                Manzil: Qashqadaryo viloyati Qarshi shahri Diydor shirin to'yxonasi
+            </p>
+
+            <a href="https://maps.app.goo.gl/WYUZtCEyV  HdFSrnJ6" target="_blank" class="flex items-center justify-center gap-2 my-8" data-aos="zoom-in">
+                <p class="text-[#a9a05c] underline italic">Manzilni ko'rish</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="#a9a05c" stroke-width="2" class="lucide lucide-map-pin">
+                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                    <circle cx="12" cy="10" r="3" />
+                </svg>
+            </a>
+
+            <!-- Countdown Placeholder (you can add JS here if needed) -->
+            <div class="text-center mt-4 pb-3" data-aos="fade-up">
+                <h2 class="text-xl text-[#a9a05c] mb-4 font-medium">To'ygacha qolgan vaqt</h2>
+
+                <div class="flex justify-center space-x-4 text-[#a9a05c] text-3xl font-bold">
+                    <span id="days">0</span><span>:</span>
+                    <span id="hours">0</span><span>:</span>
+                    <span id="minutes">0</span><span>:</span>
+                    <span id="seconds">0</span>
+                </div>
+
+                <div class="flex justify-center space-x-4 text-sm text-[#a9a05c] mt-1">
+                    <span>Kun&nbsp;&nbsp;&nbsp;</span>
+                    <span>Soat&nbsp;&nbsp;&nbsp;</span>
+                    <span>Daqiqa&nbsp;&nbsp;&nbsp;</span>
+                    <span>Soniya&nbsp;&nbsp;</span>
+                </div>
+            </div>
+
+
+
+            <!-- Credit -->
+            <a href="https://t.me/sd_zuc" target="_blank" class="block mt-20 text-right text-sm text-[#a9a05c] italic pr-2 underline">by Abdullaev</a>
+</main>
+
+    <script>
+                AOS.init();
+          function updateCountdown() {
+            const weddingDate = new Date("2025-07-19T18:00:00");
+            const now = new Date();
+            const diff = weddingDate - now;
+
+            if (diff <= 0) {
+              document.getElementById("days").textContent = 0;
+              document.getElementById("hours").textContent = 0;
+              document.getElementById("minutes").textContent = 0;
+              document.getElementById("seconds").textContent = 0;
+              return;
+            }
+
+            const seconds = Math.floor((diff / 1000) % 60);
+            const minutes = Math.floor((diff / 1000 / 60) % 60);
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+          }
+
+          // Update every second
+          setInterval(updateCountdown, 1000);
+          updateCountdown(); // initial call
+    </script>
+
+</body>
+</html>
