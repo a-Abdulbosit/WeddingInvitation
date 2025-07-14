@@ -220,17 +220,16 @@
             }
         });
 
-        const audio = document.getElementById('bg-music');
+         const audio = document.getElementById('bg-music');
 
     const enableAudio = () => {
         audio.muted = false;
-        audio.play().catch(() => {}); // some browsers require catch
+        audio.play().catch(() => {});
         window.removeEventListener('click', enableAudio);
         window.removeEventListener('scroll', enableAudio);
         window.removeEventListener('touchstart', enableAudio);
     };
 
-    // Wait for first user interaction
     window.addEventListener('click', enableAudio);
     window.addEventListener('scroll', enableAudio);
     window.addEventListener('touchstart', enableAudio);
