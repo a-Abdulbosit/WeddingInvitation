@@ -47,9 +47,10 @@
 <body class="flex justify-center items-center min-h-screen">
 
     <!-- Music autoplay -->
-    <audio autoplay loop preload="auto">
-        <source src="wedding (online-audio-converter.com).mp3" type="audio/mpeg" />
-    </audio>
+    <audio id="bg-music" autoplay muted loop preload="auto">
+    <source src="wedding (online-audio-converter.com).mp3" type="audio/mpeg" />
+</audio>
+
 
     <main class="max-w-[450px] w-full p-2 bg-[#ececec] overflow-x-hidden">
         <div class="h-screen flex flex-col gap-5">
@@ -218,6 +219,21 @@
                 scrollBtn.style.pointerEvents = "auto";
             }
         });
+
+        const audio = document.getElementById('bg-music');
+
+    const enableAudio = () => {
+        audio.muted = false;
+        audio.play().catch(() => {}); // some browsers require catch
+        window.removeEventListener('click', enableAudio);
+        window.removeEventListener('scroll', enableAudio);
+        window.removeEventListener('touchstart', enableAudio);
+    };
+
+    // Wait for first user interaction
+    window.addEventListener('click', enableAudio);
+    window.addEventListener('scroll', enableAudio);
+    window.addEventListener('touchstart', enableAudio);
     </script>
 
 
