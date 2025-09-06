@@ -11,8 +11,10 @@
         .wedding-font {
             font-family: 'Great Vibes', cursive;
         }
+        .text-dusty-blue {
+            color: #64748b;
+        }
     </style>
-
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,19 +40,14 @@
         .drop-shadow-img {
             filter: drop-shadow(0px 20px 20px rgba(59, 22, 66, 0.3));
         }
-
-        .wedding-font {
-            font-family: 'Great Vibes', cursive;
-        }
     </style>
 </head>
 <body class="flex justify-center items-center min-h-screen">
 
     <!-- Music autoplay -->
     <audio id="bg-music" autoplay muted loop preload="auto">
-    <source src="wedding (online-audio-converter.com).mp3" type="audio/mpeg" />
-</audio>
-
+        <source src="wedding (online-audio-converter.com).mp3" type="audio/mpeg" />
+    </audio>
 
     <main class="max-w-[450px] w-full p-2 bg-[#ececec] overflow-x-hidden">
         <div class="h-screen flex flex-col gap-5">
@@ -73,21 +70,13 @@
                 </div>
             </nav>
 
-
-
-
-
-
-
-
-
             <!-- Couple Section -->
             <div class="relative py-5 space-y-5 text-shadow">
                 <img src="images/hydrangea.png" class="drop-shadow-img absolute -top-1/2 -right-24 rotate-[-20deg]" width="250" alt="flower" data-aos="fade-left" />
                 <img src="images/hydra.png" class="drop-shadow-img absolute -bottom-1/2 -left-24 rotate-[20deg]" width="250" alt="flower" data-aos="fade-right" />
-                <h1 class="pl-10 wedding-font text-7xl sm:text-6xl  text-blue-600" data-aos="fade-right">Shohjahon</h1>
-                <h1 class="text-center wedding-font text-4xl sm:text-5xl text-blue-600" data-aos="zoom-in">&</h1>
-                <h1 class="pr-10 flex justify-end wedding-font text-7xl sm:text-6xl text-blue-600" data-aos="fade-left">Zarinaxon</h1>
+                <h1 class="pl-10 wedding-font text-7xl sm:text-6xl text-dusty-blue" data-aos="fade-right">Shohjahon</h1>
+                <h1 class="text-center wedding-font text-4xl sm:text-5xl text-dusty-blue" data-aos="zoom-in">&</h1>
+                <h1 class="pr-10 flex justify-end wedding-font text-7xl sm:text-6xl text-dusty-blue" data-aos="fade-left">Zarinaxon</h1>
             </div>
 
             <!-- Line + Scroll Button -->
@@ -101,7 +90,6 @@
                             <path d="M6 9l6 6 6-6" />
                         </svg>
                     </a>
-
                 </div>
             </div>
         </div>
@@ -220,21 +208,19 @@
             }
         });
 
-         const audio = document.getElementById('bg-music');
+        const audio = document.getElementById('bg-music');
 
-    const enableAudio = () => {
-        audio.muted = false;
-        audio.play().catch(() => {});
-        window.removeEventListener('click', enableAudio);
-        window.removeEventListener('scroll', enableAudio);
-        window.removeEventListener('touchstart', enableAudio);
-    };
+        const enableAudio = () => {
+            audio.muted = false;
+            audio.play().catch(() => {});
+            window.removeEventListener('click', enableAudio);
+            window.removeEventListener('scroll', enableAudio);
+            window.removeEventListener('touchstart', enableAudio);
+        };
 
-    window.addEventListener('click', enableAudio);
-    window.addEventListener('scroll', enableAudio);
-    window.addEventListener('touchstart', enableAudio);
+        window.addEventListener('click', enableAudio);
+        window.addEventListener('scroll', enableAudio);
+        window.addEventListener('touchstart', enableAudio);
     </script>
-
-
 </body>
 </html>
